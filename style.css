@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e0e8ff;
+    width: 100%;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    content: url(images/pattern-background-desktop.svg);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 425px;
+    background: #ffffff;
+    border-radius: 20px;
+    position: relative;
+    align-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    box-shadow: 0.5em 2em 15px #d0d6eb;
+}
+
+.card .header{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.content{
+    margin: 50px;
+    text-align: center;
+}
+
+.content h2{
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 25px ;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.content p {
+    font-weight: 500;
+    color: #787e8e;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    background:  hsl(225, 100%, 94%);
+    padding: 20px 0px;
+    border-radius: 10px;
+}
+
+.row img{
+    width: 50px;
+    height: 50px;
+}
+
+.row a{
+    color:hsl(245, 75%, 52%);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.row a:hover{
+    color:hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+
+.plan{
+    text-align: left;
+    margin-left: -50px;
+    height: 50px;
+}
+
+.plan h3 {
+    color: #293857;
+    font-size: 15px;
+    font-weight: 700;
+}
+.plan p {    
+    line-height: 6vh;
+    color: #787e8e;
+    font-weight: 500;
+}
+
+footer{
+    position: relative;
+    margin: 30px;
+}
+
+.btn{
+    background-color:hsl(245, 75%, 52%);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11pt;
+    display: block;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow:  0em 1.5em 15px #dee3f7;
+}
+
+.btn:hover{
+    background:hsl(224, 23%, 55%);
+}
+
+.btn.second{
+    background-color:transparent;
+    color: #787e8e;
+    box-shadow:  none;
+}
+
+.btn.second:hover{
+    color: #293857;
+}
+
+@media (max-width: 500px) {
+    .background{
+        content: url(images/pattern-background-mobile.svg);
+    }
+
+    .container{
+        padding: 20px;
+    }
+
+    .card{
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .content{
+        margin: 25px;
+    }
+    .content h2{
+        margin-bottom: 20px ;
+    }
+
+    .content p{
+        margin-bottom: 30px;
+    }
+
+    .plan{
+        text-align: left;
+        margin-left: -20px;
+        height: 50px;
+    }
+    
+  }
+  
